@@ -6,9 +6,9 @@ eureka:
       defaultZone: http://peer2:8761/eureka
 zuul:
   routes:
-    biz-1:
-      path: /biz_1/**
-      serviceId: ribbon-service
-    biz-2:
-      path: /biz_2/**
-      serviceId: feign-service
+    user:
+      path: /user/**
+      serviceId: taxi-user
+    auth:
+      path: /auth/**
+      serviceId: auth-center
