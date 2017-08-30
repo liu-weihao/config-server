@@ -1,0 +1,14 @@
+server:
+  port: 20480
+eureka:
+  client:
+    service-url:
+      defaultZone: http://peer2:8761/eureka
+zuul:
+  routes:
+    biz-1:
+      path: /biz_1/**
+      serviceId: ribbon-service
+    biz-2:
+      path: /biz_2/**
+      serviceId: feign-service
