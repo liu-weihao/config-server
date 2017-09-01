@@ -13,3 +13,13 @@ feign:
     request:
       mime-types: text/xml,application/xml,application/json
       min-request-size: 2048
+gate:
+  ignore:
+    startWith: /static
+    contain: .
+  oauth:
+    prefix: /jwt
+  jwt:
+    secret: taxi123456
+    expiration: 7200
+    header: access-token
