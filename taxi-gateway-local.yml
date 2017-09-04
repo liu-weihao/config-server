@@ -40,20 +40,20 @@ gate:
 zuul:
   routes:
     user:
-      path: /user/**
+      path: /*/user/**
       serviceId: taxi-user
     account:
-      path: /account/**
+      path: /*/account/**
       serviceId: taxi-account
     order:
-      path: /order/**
+      path: /*/order/**
       serviceId: taxi-order
     finance:
-      path: /finance/**
+      path: /*/finance/**
       serviceId: taxi-finance
     notification:
-      path: /notification/**
+      path: /*/notification/**
       serviceId: taxi-notification
     system:
-      path: /system/**
+      path: /*/system/**
       serviceId: taxi-system
