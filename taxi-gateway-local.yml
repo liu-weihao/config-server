@@ -34,8 +34,8 @@ gate:
   oauth:
     prefix: /jwt
   jwt:
-    secret: taxi123456
-    expiration: 7200
+    secret: taxi!@#
+    expiration: 100
     header: access-token
 zuul:
   routes:
