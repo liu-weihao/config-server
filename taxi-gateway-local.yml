@@ -39,9 +39,6 @@ gate:
     header: access-token
 zuul:
   routes:
-    registry:
-      path: /*/registry/**
-      serviceId: taxi-gateway
     user:
       path: /*/user/**
       serviceId: taxi-user
