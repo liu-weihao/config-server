@@ -38,6 +38,12 @@ gateway:
     expire_seconds: 100
     header: Authorization
 zuul:
+  max:
+    host:
+      connections: 500
+  host:
+    socket-timeout-millis: 60000
+    connect-timeout-millis: 60000
   routes:
     user:
       path: /*/user/**
