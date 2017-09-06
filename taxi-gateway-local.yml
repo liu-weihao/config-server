@@ -27,16 +27,11 @@ feign:
     request:
       mime-types: text/xml,application/xml,application/json
       min-request-size: 2048
-gate:
-  ignore:
-    startWith: /static
-    contain: .
-  oauth:
-    prefix: /jwt
+gateway:
   jwt:
     secret: taxi!@#
-    expiration: 100
-    header: access-token
+    expire_seconds: 100
+    header: Authorization
 zuul:
   routes:
     user:
