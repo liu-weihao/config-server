@@ -3,6 +3,11 @@ server:
 spring:
   application:
     name: taxi-gateway
+  redis:
+      host: 192.168.0.222
+      port: 6370
+      password: taxi0
+      timeout: 1800000
   thymeleaf:
     mode: LEGACYHTML5
     cache: false
