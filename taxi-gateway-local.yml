@@ -35,7 +35,7 @@ feign:
 gateway:
   jwt:
     secret: taxi!@#
-    expire_seconds: 100
+    expire_seconds: 300
     header: Authorization
 zuul:
   max:
