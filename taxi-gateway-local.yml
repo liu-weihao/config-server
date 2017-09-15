@@ -26,7 +26,7 @@ spring:
 eureka:
   client:
     service-url:
-      defaultZone: http://peer2:10001/eureka
+      defaultZone: http://192.168.0.111:10000/eureka
 feign:
   compression:
     request:
