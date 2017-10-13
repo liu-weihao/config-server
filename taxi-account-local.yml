@@ -7,13 +7,13 @@ spring:
     date-format: yyyy-MM-dd HH:mm:ss
     time-zone: GMT+8
   datasource:
-    url: jdbc:mysql://127.0.0.1:3306/taxi-account?useUnicode=true&characterEncoding=UTF8
+    url: jdbc:mysql://192.168.0.222:3306/taxi-account?useUnicode=true&characterEncoding=UTF8&useSSL=false
     username: root
-    password: 123456
+    password: taxi123456
     # 使用Hikari数据源
     type: com.zaxxer.hikari.HikariDataSource
     driver-class-name: com.mysql.jdbc.Driver
 eureka:
   client:
     service-url:
-      defaultZone: http://peer2:8762/eureka
+      http://peer1:10000/eureka
