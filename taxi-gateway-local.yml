@@ -58,3 +58,105 @@ zuul:
     system:
       path: /*/system/**
       serviceId: taxi-system
+taxi-user:
+  ribbon:
+    ReadTimeout: 12000
+    ConnectTimeout: 12000
+    MaxAutoRetries: 1
+    MaxAutoRetriesNextServer: 2
+    eureka:
+      enabled: true
+  hystrix:
+    command:
+      default:
+        execution:
+          timeout:
+            enabled: true
+          isolation:
+            thread:
+              timeoutInMilliseconds: 15000
+taxi-account:
+  ribbon:
+    ReadTimeout: 12000
+    ConnectTimeout: 12000
+    MaxAutoRetries: 1
+    MaxAutoRetriesNextServer: 2
+    eureka:
+      enabled: true
+  hystrix:
+    command:
+      default:
+        execution:
+          timeout:
+            enabled: true
+          isolation:
+            thread:
+              timeoutInMilliseconds: 15000
+taxi-order:
+  ribbon:
+    ReadTimeout: 13000
+    ConnectTimeout: 13000
+    MaxAutoRetries: 1
+    MaxAutoRetriesNextServer: 2
+    eureka:
+      enabled: true
+  hystrix:
+    command:
+      default:
+        execution:
+          timeout:
+            enabled: true
+          isolation:
+            thread:
+              timeoutInMilliseconds: 15000
+taxi-system:
+  ribbon:
+    ReadTimeout: 12000
+    ConnectTimeout: 12000
+    MaxAutoRetries: 1
+    MaxAutoRetriesNextServer: 2
+    eureka:
+      enabled: true
+  hystrix:
+    command:
+      default:
+        execution:
+          timeout:
+            enabled: true
+          isolation:
+            thread:
+              timeoutInMilliseconds: 15000
+taxi-finance:
+  ribbon:
+    ReadTimeout: 10000
+    ConnectTimeout: 10000
+    MaxAutoRetries: 1
+    MaxAutoRetriesNextServer: 2
+    eureka:
+      enabled: true
+  hystrix:
+    command:
+      default:
+        execution:
+          timeout:
+            enabled: true
+          isolation:
+            thread:
+              timeoutInMilliseconds: 15000
+taxi-notification:
+  ribbon:
+    ReadTimeout: 10000
+    ConnectTimeout: 10000
+    MaxAutoRetries: 1
+    MaxAutoRetriesNextServer: 2
+    eureka:
+      enabled: true
+  hystrix:
+    command:
+      default:
+        execution:
+          timeout:
+            enabled: true
+          isolation:
+            thread:
+              timeoutInMilliseconds: 15000
