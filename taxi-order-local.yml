@@ -3,6 +3,13 @@ server:
 spring:
   application:
     name: taxi-order
+  rabbitmq:
+    host: 192.168.0.222
+    port: 5672
+    connection-timeout: 7000
+    virtual-host: /
+    username: root
+    password: taxi123456
   redis:
       host: 192.168.0.222
       port: 6370
