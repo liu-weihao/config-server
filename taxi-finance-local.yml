@@ -3,11 +3,16 @@ server:
 spring:
   application:
     name: taxi-finance
+  redis:
+      host: 192.168.0.222
+      port: 6370
+      password: taxi0
+      timeout: 1800000
   jackson:
     date-format: yyyy-MM-dd HH:mm:ss
     time-zone: GMT+8
   datasource:
-    url: jdbc:mysql://192.168.0.222:3306/taxi-finance?useUnicode=true&characterEncoding=UTF8&useSSL=false
+    url: jdbc:mysql://192.168.0.222:3306/taxi-user?useUnicode=true&characterEncoding=UTF8&useSSL=false
     username: root
     password: taxi123456
     # 使用Hikari数据源
