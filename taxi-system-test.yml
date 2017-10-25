@@ -8,8 +8,8 @@ spring:
     time-zone: GMT+8
   datasource:
     url: jdbc:mysql://rm-bp1cj68xrmcrqk78c.mysql.rds.aliyuncs.com:3306/taxi-system?useUnicode=true&characterEncoding=UTF8&useSSL=false
-    username: root
-    password: taxi123456
+    username: yoogurt
+    password: taxi123!@#
     # 使用Hikari数据源
     type: com.zaxxer.hikari.HikariDataSource
     driver-class-name: com.mysql.jdbc.Driver
