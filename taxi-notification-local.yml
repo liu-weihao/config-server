@@ -9,11 +9,11 @@ spring:
     connection-timeout: 7000
     virtual-host: /
     username: root
-    password: taxi123456
+    password: '{cipher}aaa598ab8836842c849b48b772f8fbfc48fef9c4fb9f933dbeb73b91128e1523'
   redis:
       host: 192.168.0.222
       port: 6370
-      password: taxi0
+      password: '{cipher}24462190beaad45fc90fd249abfc16af0cc2c49530702a35036314f6d08de5ef'
       timeout: 1800000
   jackson:
     date-format: yyyy-MM-dd HH:mm:ss
@@ -21,7 +21,7 @@ spring:
   datasource:
     url: jdbc:mysql://192.168.0.222:3306/taxi-notification?useUnicode=true&characterEncoding=UTF8&useSSL=false
     username: root
-    password: taxi123456
+    password: '{cipher}aaa598ab8836842c849b48b772f8fbfc48fef9c4fb9f933dbeb73b91128e1523'
     # 使用Hikari数据源
     type: com.zaxxer.hikari.HikariDataSource
     driver-class-name: com.mysql.jdbc.Driver
