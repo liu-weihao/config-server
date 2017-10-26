@@ -14,7 +14,7 @@ spring:
   datasource:
     url: jdbc:mysql://192.168.0.222:3306/taxi-user?useUnicode=true&characterEncoding=UTF8&useSSL=false
     username: root
-    password: '{cipher} 68d07a4ea0d8d70f3d9cf9afc550372354c5ab74ce2a59e1c64cf3606f6e0262'
+    password: '{cipher}68d07a4ea0d8d70f3d9cf9afc550372354c5ab74ce2a59e1c64cf3606f6e0262'
     # 使用Hikari数据源
     type: com.zaxxer.hikari.HikariDataSource
     driver-class-name: com.mysql.jdbc.Driver
