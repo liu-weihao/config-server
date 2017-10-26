@@ -13,8 +13,8 @@ spring:
     time-zone: GMT+8
   datasource:
     url: jdbc:mysql://192.168.0.222:3306/taxi-user?useUnicode=true&characterEncoding=UTF8&useSSL=false
-    username: {cipher} 845743c98d3e9cf5f1e84232f5d6dc163a8c5d2f110dcce919001c9e50f5ad21
-    password: {cipher} 68d07a4ea0d8d70f3d9cf9afc550372354c5ab74ce2a59e1c64cf3606f6e0262
+    username: {cipher}845743c98d3e9cf5f1e84232f5d6dc163a8c5d2f110dcce919001c9e50f5ad21
+    password: {cipher}68d07a4ea0d8d70f3d9cf9afc550372354c5ab74ce2a59e1c64cf3606f6e0262
     # 使用Hikari数据源
     type: com.zaxxer.hikari.HikariDataSource
     driver-class-name: com.mysql.jdbc.Driver
