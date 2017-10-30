@@ -9,11 +9,11 @@ spring:
     connection-timeout: 7000
     virtual-host: /
     username: root
-    password: taxi123456
+    password: '{cipher}aaa598ab8836842c849b48b772f8fbfc48fef9c4fb9f933dbeb73b91128e1523'
   redis:
       host: 120.55.42.113
       port: 6370
-      password: taxi0
+      password: '{cipher}24462190beaad45fc90fd249abfc16af0cc2c49530702a35036314f6d08de5ef'
       timeout: 1800000
   data:
     mongodb:
@@ -22,14 +22,14 @@ spring:
       database: finance
       authenticationDatabase: finance
       username: finance
-      password: (Finance0)
+      password: '{cipher}fac45ada0f02cca623c7624449b0f086033ba7105257ddb4cc4c2b5741b3523a'
   jackson:
     date-format: yyyy-MM-dd HH:mm:ss
     time-zone: GMT+8
   datasource:
     url: jdbc:mysql://rm-bp1cj68xrmcrqk78c.mysql.rds.aliyuncs.com:3306/taxi-user?useUnicode=true&characterEncoding=UTF8&useSSL=false
     username: yoogurt
-    password: taxi123!@#
+    password: '{cipher}2c7f1c5a93ef567cf5c643765fc19b1de03fce98b4006d8c77947bb5dd9db93b'
     # 使用Hikari数据源
     type: com.zaxxer.hikari.HikariDataSource
     driver-class-name: com.mysql.jdbc.Driver
