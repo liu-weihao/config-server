@@ -79,7 +79,7 @@ taxi-user:
       default:
         execution:
           timeout:
-            enabled: true
+            enabled: false
           isolation:
             thread:
               timeoutInMilliseconds: 15000
@@ -100,7 +100,7 @@ taxi-account:
       default:
         execution:
           timeout:
-            enabled: true
+            enabled: false
           isolation:
             thread:
               timeoutInMilliseconds: 15000
@@ -121,7 +121,7 @@ taxi-order:
       default:
         execution:
           timeout:
-            enabled: true
+            enabled: false
           isolation:
             thread:
               timeoutInMilliseconds: 15000
@@ -142,7 +142,7 @@ taxi-system:
       default:
         execution:
           timeout:
-            enabled: true
+            enabled: false
           isolation:
             thread:
               timeoutInMilliseconds: 15000
@@ -163,7 +163,7 @@ taxi-finance:
       default:
         execution:
           timeout:
-            enabled: true
+            enabled: false
           isolation:
             thread:
               timeoutInMilliseconds: 15000
@@ -184,7 +184,7 @@ taxi-notification:
       default:
         execution:
           timeout:
-            enabled: true
+            enabled: false
           isolation:
             thread:
               timeoutInMilliseconds: 15000
