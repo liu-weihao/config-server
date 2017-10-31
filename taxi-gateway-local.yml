@@ -80,9 +80,6 @@ taxi-user:
         execution:
           timeout:
             enabled: false
-          isolation:
-            thread:
-              timeoutInMilliseconds: 15000
 taxi-account:
   ribbon:
     ReadTimeout: 12000
@@ -101,9 +98,6 @@ taxi-account:
         execution:
           timeout:
             enabled: false
-          isolation:
-            thread:
-              timeoutInMilliseconds: 15000
 taxi-order:
   ribbon:
     ReadTimeout: 13000
@@ -122,9 +116,6 @@ taxi-order:
         execution:
           timeout:
             enabled: false
-          isolation:
-            thread:
-              timeoutInMilliseconds: 15000
 taxi-system:
   ribbon:
     ReadTimeout: 12000
@@ -143,9 +134,6 @@ taxi-system:
         execution:
           timeout:
             enabled: false
-          isolation:
-            thread:
-              timeoutInMilliseconds: 15000
 taxi-finance:
   ribbon:
     ReadTimeout: 10000
@@ -164,9 +152,6 @@ taxi-finance:
         execution:
           timeout:
             enabled: false
-          isolation:
-            thread:
-              timeoutInMilliseconds: 15000
 taxi-notification:
   ribbon:
     ReadTimeout: 10000
@@ -185,6 +170,3 @@ taxi-notification:
         execution:
           timeout:
             enabled: false
-          isolation:
-            thread:
-              timeoutInMilliseconds: 15000
