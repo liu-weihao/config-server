@@ -80,6 +80,7 @@ taxi-user:
         coreSize: 200 ##并发执行的最大线程数，默认10
         maxQueueSize: 200 ##BlockingQueue的最大队列数
         queueSizeRejectionThreshold: 50 ##即使maxQueueSize没有达到，达到queueSizeRejectionThreshold该值后，请求也会被拒绝
+    command:
       default:
         execution:
           timeout:
@@ -108,6 +109,7 @@ taxi-account:
         coreSize: 200 ##并发执行的最大线程数，默认10
         maxQueueSize: 200 ##BlockingQueue的最大队列数
         queueSizeRejectionThreshold: 50 ##即使maxQueueSize没有达到，达到queueSizeRejectionThreshold该值后，请求也会被拒绝
+    command:
       default:
         execution:
           timeout:
@@ -136,6 +138,7 @@ taxi-order:
         coreSize: 200 ##并发执行的最大线程数，默认10
         maxQueueSize: 200 ##BlockingQueue的最大队列数
         queueSizeRejectionThreshold: 50 ##即使maxQueueSize没有达到，达到queueSizeRejectionThreshold该值后，请求也会被拒绝
+    command:
       default:
         execution:
           timeout:
@@ -164,6 +167,7 @@ taxi-system:
         coreSize: 200 ##并发执行的最大线程数，默认10
         maxQueueSize: 200 ##BlockingQueue的最大队列数
         queueSizeRejectionThreshold: 50 ##即使maxQueueSize没有达到，达到queueSizeRejectionThreshold该值后，请求也会被拒绝
+    command:
       default:
         execution:
           timeout:
@@ -192,6 +196,7 @@ taxi-finance:
         coreSize: 200 ##并发执行的最大线程数，默认10
         maxQueueSize: 200 ##BlockingQueue的最大队列数
         queueSizeRejectionThreshold: 50 ##即使maxQueueSize没有达到，达到queueSizeRejectionThreshold该值后，请求也会被拒绝
+    command:
       default:
         execution:
           timeout:
@@ -220,6 +225,7 @@ taxi-notification:
         coreSize: 200 ##并发执行的最大线程数，默认10
         maxQueueSize: 200 ##BlockingQueue的最大队列数
         queueSizeRejectionThreshold: 50 ##即使maxQueueSize没有达到，达到queueSizeRejectionThreshold该值后，请求也会被拒绝
+    command:
       default:
         execution:
           timeout:
