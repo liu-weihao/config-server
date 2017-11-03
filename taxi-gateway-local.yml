@@ -75,11 +75,21 @@ taxi-user:
     okhttp:
       enabled: true
   hystrix:
-    command:
+    threadpool:
+      default:
+        coreSize: 200 ##并发执行的最大线程数，默认10
+        maxQueueSize: 200 ##BlockingQueue的最大队列数
+        queueSizeRejectionThreshold: 50 ##即使maxQueueSize没有达到，达到queueSizeRejectionThreshold该值后，请求也会被拒绝
       default:
         execution:
           timeout:
-            enabled: false
+            enabled: true
+          isolation:
+            strategy: THREAD
+            semaphore:
+              maxConcurrentRequests: 1000
+            thread:
+              timeoutInMilliseconds: 30000
 taxi-account:
   ribbon:
     ReadTimeout: 12000
@@ -93,11 +103,21 @@ taxi-account:
     okhttp:
       enabled: true
   hystrix:
-    command:
+    threadpool:
+      default:
+        coreSize: 200 ##并发执行的最大线程数，默认10
+        maxQueueSize: 200 ##BlockingQueue的最大队列数
+        queueSizeRejectionThreshold: 50 ##即使maxQueueSize没有达到，达到queueSizeRejectionThreshold该值后，请求也会被拒绝
       default:
         execution:
           timeout:
-            enabled: false
+            enabled: true
+          isolation:
+            strategy: THREAD
+            semaphore:
+              maxConcurrentRequests: 1000
+            thread:
+              timeoutInMilliseconds: 30000
 taxi-order:
   ribbon:
     ReadTimeout: 13000
@@ -111,11 +131,21 @@ taxi-order:
     okhttp:
       enabled: true
   hystrix:
-    command:
+    threadpool:
+      default:
+        coreSize: 200 ##并发执行的最大线程数，默认10
+        maxQueueSize: 200 ##BlockingQueue的最大队列数
+        queueSizeRejectionThreshold: 50 ##即使maxQueueSize没有达到，达到queueSizeRejectionThreshold该值后，请求也会被拒绝
       default:
         execution:
           timeout:
-            enabled: false
+            enabled: true
+          isolation:
+            strategy: THREAD
+            semaphore:
+              maxConcurrentRequests: 1000
+            thread:
+              timeoutInMilliseconds: 30000
 taxi-system:
   ribbon:
     ReadTimeout: 12000
@@ -129,11 +159,21 @@ taxi-system:
     okhttp:
       enabled: true
   hystrix:
-    command:
+    threadpool:
+      default:
+        coreSize: 200 ##并发执行的最大线程数，默认10
+        maxQueueSize: 200 ##BlockingQueue的最大队列数
+        queueSizeRejectionThreshold: 50 ##即使maxQueueSize没有达到，达到queueSizeRejectionThreshold该值后，请求也会被拒绝
       default:
         execution:
           timeout:
-            enabled: false
+            enabled: true
+          isolation:
+            strategy: THREAD
+            semaphore:
+              maxConcurrentRequests: 1000
+            thread:
+              timeoutInMilliseconds: 30000
 taxi-finance:
   ribbon:
     ReadTimeout: 10000
@@ -147,11 +187,21 @@ taxi-finance:
     okhttp:
       enabled: true
   hystrix:
-    command:
+    threadpool:
+      default:
+        coreSize: 200 ##并发执行的最大线程数，默认10
+        maxQueueSize: 200 ##BlockingQueue的最大队列数
+        queueSizeRejectionThreshold: 50 ##即使maxQueueSize没有达到，达到queueSizeRejectionThreshold该值后，请求也会被拒绝
       default:
         execution:
           timeout:
-            enabled: false
+            enabled: true
+          isolation:
+            strategy: THREAD
+            semaphore:
+              maxConcurrentRequests: 1000
+            thread:
+              timeoutInMilliseconds: 30000
 taxi-notification:
   ribbon:
     ReadTimeout: 10000
@@ -165,8 +215,18 @@ taxi-notification:
     okhttp:
       enabled: true
   hystrix:
-    command:
+    threadpool:
+      default:
+        coreSize: 200 ##并发执行的最大线程数，默认10
+        maxQueueSize: 200 ##BlockingQueue的最大队列数
+        queueSizeRejectionThreshold: 50 ##即使maxQueueSize没有达到，达到queueSizeRejectionThreshold该值后，请求也会被拒绝
       default:
         execution:
           timeout:
-            enabled: false
+            enabled: true
+          isolation:
+            strategy: THREAD
+            semaphore:
+              maxConcurrentRequests: 1000
+            thread:
+              timeoutInMilliseconds: 30000
