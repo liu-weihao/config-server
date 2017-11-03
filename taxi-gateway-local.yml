@@ -77,9 +77,9 @@ taxi-user:
   hystrix:
     threadpool:
       default:
-        coreSize: 200 ##并发执行的最大线程数，默认10
+        coreSize: 1000 ##并发执行的最大线程数，默认10
         maxQueueSize: 200 ##BlockingQueue的最大队列数
-        queueSizeRejectionThreshold: 50 ##即使maxQueueSize没有达到，达到queueSizeRejectionThreshold该值后，请求也会被拒绝
+        queueSizeRejectionThreshold: 200 ##即使maxQueueSize没有达到，达到queueSizeRejectionThreshold该值后，请求也会被拒绝
     command:
       default:
         execution:
@@ -106,9 +106,9 @@ taxi-account:
   hystrix:
     threadpool:
       default:
-        coreSize: 200 ##并发执行的最大线程数，默认10
+        coreSize: 1000 ##并发执行的最大线程数，默认10
         maxQueueSize: 200 ##BlockingQueue的最大队列数
-        queueSizeRejectionThreshold: 50 ##即使maxQueueSize没有达到，达到queueSizeRejectionThreshold该值后，请求也会被拒绝
+        queueSizeRejectionThreshold: 200 ##即使maxQueueSize没有达到，达到queueSizeRejectionThreshold该值后，请求也会被拒绝
     command:
       default:
         execution:
@@ -135,9 +135,9 @@ taxi-order:
   hystrix:
     threadpool:
       default:
-        coreSize: 200 ##并发执行的最大线程数，默认10
+        coreSize: 1000 ##并发执行的最大线程数，默认10
         maxQueueSize: 200 ##BlockingQueue的最大队列数
-        queueSizeRejectionThreshold: 50 ##即使maxQueueSize没有达到，达到queueSizeRejectionThreshold该值后，请求也会被拒绝
+        queueSizeRejectionThreshold: 200 ##即使maxQueueSize没有达到，达到queueSizeRejectionThreshold该值后，请求也会被拒绝
     command:
       default:
         execution:
@@ -164,9 +164,9 @@ taxi-system:
   hystrix:
     threadpool:
       default:
-        coreSize: 200 ##并发执行的最大线程数，默认10
+        coreSize: 1000 ##并发执行的最大线程数，默认10
         maxQueueSize: 200 ##BlockingQueue的最大队列数
-        queueSizeRejectionThreshold: 50 ##即使maxQueueSize没有达到，达到queueSizeRejectionThreshold该值后，请求也会被拒绝
+        queueSizeRejectionThreshold: 200 ##即使maxQueueSize没有达到，达到queueSizeRejectionThreshold该值后，请求也会被拒绝
     command:
       default:
         execution:
@@ -193,9 +193,9 @@ taxi-finance:
   hystrix:
     threadpool:
       default:
-        coreSize: 200 ##并发执行的最大线程数，默认10
+        coreSize: 1000 ##并发执行的最大线程数，默认10
         maxQueueSize: 200 ##BlockingQueue的最大队列数
-        queueSizeRejectionThreshold: 50 ##即使maxQueueSize没有达到，达到queueSizeRejectionThreshold该值后，请求也会被拒绝
+        queueSizeRejectionThreshold: 200 ##即使maxQueueSize没有达到，达到queueSizeRejectionThreshold该值后，请求也会被拒绝
     command:
       default:
         execution:
@@ -222,9 +222,9 @@ taxi-notification:
   hystrix:
     threadpool:
       default:
-        coreSize: 200 ##并发执行的最大线程数，默认10
+        coreSize: 1000 ##并发执行的最大线程数，默认10
         maxQueueSize: 200 ##BlockingQueue的最大队列数
-        queueSizeRejectionThreshold: 50 ##即使maxQueueSize没有达到，达到queueSizeRejectionThreshold该值后，请求也会被拒绝
+        queueSizeRejectionThreshold: 200 ##即使maxQueueSize没有达到，达到queueSizeRejectionThreshold该值后，请求也会被拒绝
     command:
       default:
         execution:
