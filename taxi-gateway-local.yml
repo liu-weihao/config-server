@@ -64,8 +64,8 @@ zuul:
       serviceId: taxi-system
 taxi-user:
   ribbon:
-    ReadTimeout: 12000
-    ConnectTimeout: 12000
+    ReadTimeout: 30000
+    ConnectTimeout: 30000
     MaxAutoRetries: 1
     MaxAutoRetriesNextServer: 2
     eureka:
@@ -93,8 +93,8 @@ taxi-user:
               timeoutInMilliseconds: 30000
 taxi-account:
   ribbon:
-    ReadTimeout: 12000
-    ConnectTimeout: 12000
+    ReadTimeout: 30000
+    ConnectTimeout: 30000
     MaxAutoRetries: 1
     MaxAutoRetriesNextServer: 2
     eureka:
@@ -122,8 +122,8 @@ taxi-account:
               timeoutInMilliseconds: 30000
 taxi-order:
   ribbon:
-    ReadTimeout: 13000
-    ConnectTimeout: 13000
+    ReadTimeout: 30000
+    ConnectTimeout: 30000
     MaxAutoRetries: 1
     MaxAutoRetriesNextServer: 2
     eureka:
@@ -151,8 +151,8 @@ taxi-order:
               timeoutInMilliseconds: 30000
 taxi-system:
   ribbon:
-    ReadTimeout: 12000
-    ConnectTimeout: 12000
+    ReadTimeout: 30000
+    ConnectTimeout: 30000
     MaxAutoRetries: 1
     MaxAutoRetriesNextServer: 2
     eureka:
@@ -180,8 +180,8 @@ taxi-system:
               timeoutInMilliseconds: 30000
 taxi-finance:
   ribbon:
-    ReadTimeout: 10000
-    ConnectTimeout: 10000
+    ReadTimeout: 30000
+    ConnectTimeout: 30000
     MaxAutoRetries: 1
     MaxAutoRetriesNextServer: 2
     eureka:
@@ -209,8 +209,8 @@ taxi-finance:
               timeoutInMilliseconds: 30000
 taxi-notification:
   ribbon:
-    ReadTimeout: 10000
-    ConnectTimeout: 10000
+    ReadTimeout: 30000
+    ConnectTimeout: 30000
     MaxAutoRetries: 1
     MaxAutoRetriesNextServer: 2
     eureka:
