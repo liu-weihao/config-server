@@ -9,7 +9,7 @@ spring:
     connection-timeout: 7000
     virtual-host: /
     username: root
-    password: '{cipher}aaa598ab8836842c849b48b772f8fbfc48fef9c4fb9f933dbeb73b91128e1523'
+    password: '{cipher}ca4a098012f4bc888f3d3faf1f46edb250f75c9a84074d01cb8920ec78d14eec'
     listener:
       simple:
         acknowledge-mode: auto
