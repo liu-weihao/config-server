@@ -9,14 +9,14 @@ spring:
     connection-timeout: 7000
     virtual-host: /
     username: root
-    password: '{cipher}e672e2f0385f8a9261df6a803fccbabc8d6251c8ea7579eee344472456777967'
+    password: '{cipher} e672e2f0385f8a9261df6a803fccbabc8d6251c8ea7579eee344472456777967'
     listener:
       simple:
         acknowledge-mode: auto
   redis:
       host: 120.55.42.113
       port: 6370
-      password: '{cipher}24462190beaad45fc90fd249abfc16af0cc2c49530702a35036314f6d08de5ef'
+      password: '{cipher} 24462190beaad45fc90fd249abfc16af0cc2c49530702a35036314f6d08de5ef'
       timeout: 1800000
   jackson:
     date-format: yyyy-MM-dd HH:mm:ss
@@ -24,7 +24,7 @@ spring:
   datasource:
     url: jdbc:mysql://rm-bp1cj68xrmcrqk78c.mysql.rds.aliyuncs.com:3306/taxi-notification?useUnicode=true&characterEncoding=UTF8&useSSL=false
     username: yoogurt
-    password: '{cipher}2c7f1c5a93ef567cf5c643765fc19b1de03fce98b4006d8c77947bb5dd9db93b'
+    password: '{cipher} 2c7f1c5a93ef567cf5c643765fc19b1de03fce98b4006d8c77947bb5dd9db93b'
     # 使用Hikari数据源
     type: com.zaxxer.hikari.HikariDataSource
     driver-class-name: com.mysql.jdbc.Driver
