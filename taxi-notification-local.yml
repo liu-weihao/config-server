@@ -10,6 +10,10 @@ spring:
     virtual-host: /
     username: root
     password: '{cipher}aaa598ab8836842c849b48b772f8fbfc48fef9c4fb9f933dbeb73b91128e1523'
+    template:
+      retry:
+        enabled: true
+        max-attempts: 2
     listener:
       simple:
         acknowledge-mode: auto
