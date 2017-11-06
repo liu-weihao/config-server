@@ -18,6 +18,14 @@ spring:
       port: 6370
       password: '{cipher}24462190beaad45fc90fd249abfc16af0cc2c49530702a35036314f6d08de5ef'
       timeout: 1800000
+  data:
+    mongodb:
+      host: 192.168.0.222
+      port: 27334
+      database: notification
+      authenticationDatabase: notification
+      username: notification
+      password: '{cipher}dfc58e60fdd9692c06ec75c5114aedb96c177cd08903973ec61a88ef4e585687'
   jackson:
     date-format: yyyy-MM-dd HH:mm
     time-zone: GMT+8
