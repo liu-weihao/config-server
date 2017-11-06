@@ -41,8 +41,8 @@ zuul:
     host:
       connections: 500
   host:
-    socket-timeout-millis: 60000
-    connect-timeout-millis: 60000
+    socket-timeout-millis: 70000
+    connect-timeout-millis: 70000
   routes:
     user:
       path: /*/user/**
@@ -91,7 +91,7 @@ taxi-user:
             semaphore:
               maxConcurrentRequests: 1000
             thread:
-              timeoutInMilliseconds: 30000
+              timeoutInMilliseconds: 60000
 taxi-account:
   ribbon:
     ReadTimeout: 20000
@@ -121,7 +121,7 @@ taxi-account:
             semaphore:
               maxConcurrentRequests: 1000
             thread:
-              timeoutInMilliseconds: 30000
+              timeoutInMilliseconds: 60000
 taxi-order:
   ribbon:
     ReadTimeout: 20000
@@ -151,7 +151,7 @@ taxi-order:
             semaphore:
               maxConcurrentRequests: 1000
             thread:
-              timeoutInMilliseconds: 30000
+              timeoutInMilliseconds: 60000
 taxi-system:
   ribbon:
     ReadTimeout: 20000
@@ -181,7 +181,7 @@ taxi-system:
             semaphore:
               maxConcurrentRequests: 1000
             thread:
-              timeoutInMilliseconds: 30000
+              timeoutInMilliseconds: 60000
 taxi-finance:
   ribbon:
     ReadTimeout: 20000
@@ -211,7 +211,7 @@ taxi-finance:
             semaphore:
               maxConcurrentRequests: 1000
             thread:
-              timeoutInMilliseconds: 30000
+              timeoutInMilliseconds: 60000
 taxi-notification:
   ribbon:
     ReadTimeout: 20000
@@ -241,4 +241,4 @@ taxi-notification:
             semaphore:
               maxConcurrentRequests: 1000
             thread:
-              timeoutInMilliseconds: 30000
+              timeoutInMilliseconds: 60000
