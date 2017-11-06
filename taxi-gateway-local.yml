@@ -68,6 +68,7 @@ taxi-user:
     ConnectTimeout: 30000
     MaxAutoRetries: 1
     MaxAutoRetriesNextServer: 2
+    OkToRetryOnAllOperations: true
     eureka:
       enabled: true
     httpclient:
@@ -97,6 +98,7 @@ taxi-account:
     ConnectTimeout: 30000
     MaxAutoRetries: 1
     MaxAutoRetriesNextServer: 2
+    OkToRetryOnAllOperations: true
     eureka:
       enabled: true
     httpclient:
@@ -126,6 +128,7 @@ taxi-order:
     ConnectTimeout: 30000
     MaxAutoRetries: 1
     MaxAutoRetriesNextServer: 2
+    OkToRetryOnAllOperations: true
     eureka:
       enabled: true
     httpclient:
@@ -155,6 +158,7 @@ taxi-system:
     ConnectTimeout: 30000
     MaxAutoRetries: 1
     MaxAutoRetriesNextServer: 2
+    OkToRetryOnAllOperations: true
     eureka:
       enabled: true
     httpclient:
@@ -184,6 +188,7 @@ taxi-finance:
     ConnectTimeout: 30000
     MaxAutoRetries: 1
     MaxAutoRetriesNextServer: 2
+    OkToRetryOnAllOperations: true
     eureka:
       enabled: true
     httpclient:
@@ -213,6 +218,7 @@ taxi-notification:
     ConnectTimeout: 30000
     MaxAutoRetries: 1
     MaxAutoRetriesNextServer: 2
+    OkToRetryOnAllOperations: true
     eureka:
       enabled: true
     httpclient:
