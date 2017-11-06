@@ -85,7 +85,7 @@ taxi-user:
       default:
         execution:
           timeout:
-            enabled: true
+            enabled: false
           isolation:
             strategy: THREAD
             semaphore:
