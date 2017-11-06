@@ -64,10 +64,10 @@ zuul:
       serviceId: taxi-system
 taxi-user:
   ribbon:
-    ReadTimeout: 30000
-    ConnectTimeout: 30000
-    MaxAutoRetries: 1
-    MaxAutoRetriesNextServer: 2
+    ReadTimeout: 20000
+    ConnectTimeout: 20000
+    MaxAutoRetries: 2
+    MaxAutoRetriesNextServer: 3
     OkToRetryOnAllOperations: true
     eureka:
       enabled: true
@@ -94,10 +94,10 @@ taxi-user:
               timeoutInMilliseconds: 30000
 taxi-account:
   ribbon:
-    ReadTimeout: 30000
-    ConnectTimeout: 30000
-    MaxAutoRetries: 1
-    MaxAutoRetriesNextServer: 2
+    ReadTimeout: 20000
+    ConnectTimeout: 20000
+    MaxAutoRetries: 2
+    MaxAutoRetriesNextServer: 3
     OkToRetryOnAllOperations: true
     eureka:
       enabled: true
@@ -124,10 +124,10 @@ taxi-account:
               timeoutInMilliseconds: 30000
 taxi-order:
   ribbon:
-    ReadTimeout: 30000
-    ConnectTimeout: 30000
-    MaxAutoRetries: 1
-    MaxAutoRetriesNextServer: 2
+    ReadTimeout: 20000
+    ConnectTimeout: 20000
+    MaxAutoRetries: 2
+    MaxAutoRetriesNextServer: 3
     OkToRetryOnAllOperations: true
     eureka:
       enabled: true
@@ -154,10 +154,10 @@ taxi-order:
               timeoutInMilliseconds: 30000
 taxi-system:
   ribbon:
-    ReadTimeout: 30000
-    ConnectTimeout: 30000
-    MaxAutoRetries: 1
-    MaxAutoRetriesNextServer: 2
+    ReadTimeout: 20000
+    ConnectTimeout: 20000
+    MaxAutoRetries: 2
+    MaxAutoRetriesNextServer: 3
     OkToRetryOnAllOperations: true
     eureka:
       enabled: true
@@ -184,10 +184,10 @@ taxi-system:
               timeoutInMilliseconds: 30000
 taxi-finance:
   ribbon:
-    ReadTimeout: 30000
-    ConnectTimeout: 30000
-    MaxAutoRetries: 1
-    MaxAutoRetriesNextServer: 2
+    ReadTimeout: 20000
+    ConnectTimeout: 20000
+    MaxAutoRetries: 2
+    MaxAutoRetriesNextServer: 3
     OkToRetryOnAllOperations: true
     eureka:
       enabled: true
@@ -214,10 +214,10 @@ taxi-finance:
               timeoutInMilliseconds: 30000
 taxi-notification:
   ribbon:
-    ReadTimeout: 30000
-    ConnectTimeout: 30000
-    MaxAutoRetries: 1
-    MaxAutoRetriesNextServer: 2
+    ReadTimeout: 20000
+    ConnectTimeout: 20000
+    MaxAutoRetries: 2
+    MaxAutoRetriesNextServer: 3
     OkToRetryOnAllOperations: true
     eureka:
       enabled: true
