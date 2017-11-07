@@ -32,10 +32,6 @@ feign:
     request:
       mime-types: text/xml,application/xml,application/json
       min-request-size: 2048
-  httpclient:
-    enabled: false
-  okhttp:
-    enabled: true
 zuul:
   max:
     host:
@@ -71,25 +67,13 @@ taxi-user:
     OkToRetryOnAllOperations: true
     eureka:
       enabled: true
-    httpclient:
-      enabled: false
-    okhttp:
-      enabled: true
   hystrix:
-    threadpool:
-      default:
-        coreSize: 1000 ##并发执行的最大线程数，默认10
-        maxQueueSize: 200 ##BlockingQueue的最大队列数
-        queueSizeRejectionThreshold: 200 ##即使maxQueueSize没有达到，达到queueSizeRejectionThreshold该值后，请求也会被拒绝
     command:
       default:
         execution:
           timeout:
-            enabled: false
+            enabled: true
           isolation:
-            strategy: THREAD
-            semaphore:
-              maxConcurrentRequests: 1000
             thread:
               timeoutInMilliseconds: 60000
 taxi-account:
@@ -101,25 +85,13 @@ taxi-account:
     OkToRetryOnAllOperations: true
     eureka:
       enabled: true
-    httpclient:
-      enabled: false
-    okhttp:
-      enabled: true
   hystrix:
-    threadpool:
-      default:
-        coreSize: 1000 ##并发执行的最大线程数，默认10
-        maxQueueSize: 200 ##BlockingQueue的最大队列数
-        queueSizeRejectionThreshold: 200 ##即使maxQueueSize没有达到，达到queueSizeRejectionThreshold该值后，请求也会被拒绝
     command:
       default:
         execution:
           timeout:
             enabled: true
           isolation:
-            strategy: THREAD
-            semaphore:
-              maxConcurrentRequests: 1000
             thread:
               timeoutInMilliseconds: 60000
 taxi-order:
@@ -131,25 +103,13 @@ taxi-order:
     OkToRetryOnAllOperations: true
     eureka:
       enabled: true
-    httpclient:
-      enabled: false
-    okhttp:
-      enabled: true
   hystrix:
-    threadpool:
-      default:
-        coreSize: 1000 ##并发执行的最大线程数，默认10
-        maxQueueSize: 200 ##BlockingQueue的最大队列数
-        queueSizeRejectionThreshold: 200 ##即使maxQueueSize没有达到，达到queueSizeRejectionThreshold该值后，请求也会被拒绝
     command:
       default:
         execution:
           timeout:
             enabled: true
           isolation:
-            strategy: THREAD
-            semaphore:
-              maxConcurrentRequests: 1000
             thread:
               timeoutInMilliseconds: 60000
 taxi-system:
@@ -161,25 +121,13 @@ taxi-system:
     OkToRetryOnAllOperations: true
     eureka:
       enabled: true
-    httpclient:
-      enabled: false
-    okhttp:
-      enabled: true
   hystrix:
-    threadpool:
-      default:
-        coreSize: 1000 ##并发执行的最大线程数，默认10
-        maxQueueSize: 200 ##BlockingQueue的最大队列数
-        queueSizeRejectionThreshold: 200 ##即使maxQueueSize没有达到，达到queueSizeRejectionThreshold该值后，请求也会被拒绝
     command:
       default:
         execution:
           timeout:
             enabled: true
           isolation:
-            strategy: THREAD
-            semaphore:
-              maxConcurrentRequests: 1000
             thread:
               timeoutInMilliseconds: 60000
 taxi-finance:
@@ -191,25 +139,13 @@ taxi-finance:
     OkToRetryOnAllOperations: true
     eureka:
       enabled: true
-    httpclient:
-      enabled: false
-    okhttp:
-      enabled: true
   hystrix:
-    threadpool:
-      default:
-        coreSize: 1000 ##并发执行的最大线程数，默认10
-        maxQueueSize: 200 ##BlockingQueue的最大队列数
-        queueSizeRejectionThreshold: 200 ##即使maxQueueSize没有达到，达到queueSizeRejectionThreshold该值后，请求也会被拒绝
     command:
       default:
         execution:
           timeout:
             enabled: true
           isolation:
-            strategy: THREAD
-            semaphore:
-              maxConcurrentRequests: 1000
             thread:
               timeoutInMilliseconds: 60000
 taxi-notification:
@@ -221,24 +157,12 @@ taxi-notification:
     OkToRetryOnAllOperations: true
     eureka:
       enabled: true
-    httpclient:
-      enabled: false
-    okhttp:
-      enabled: true
   hystrix:
-    threadpool:
-      default:
-        coreSize: 1000 ##并发执行的最大线程数，默认10
-        maxQueueSize: 200 ##BlockingQueue的最大队列数
-        queueSizeRejectionThreshold: 200 ##即使maxQueueSize没有达到，达到queueSizeRejectionThreshold该值后，请求也会被拒绝
     command:
       default:
         execution:
           timeout:
             enabled: true
           isolation:
-            strategy: THREAD
-            semaphore:
-              maxConcurrentRequests: 1000
             thread:
               timeoutInMilliseconds: 60000
