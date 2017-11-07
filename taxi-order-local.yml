@@ -12,7 +12,7 @@ spring:
     password: '{cipher}aaa598ab8836842c849b48b772f8fbfc48fef9c4fb9f933dbeb73b91128e1523'
     listener:
       simple:
-        acknowledge-mode: none
+        acknowledge-mode: auto
   redis:
       host: 192.168.0.222
       port: 6370
