@@ -9,7 +9,7 @@ spring:
       password: '{cipher}24462190beaad45fc90fd249abfc16af0cc2c49530702a35036314f6d08de5ef'
       timeout: 1800000
   rabbitmq:
-    host: 192.168.0.222
+    host: 120.55.42.113
     port: 5672
     connection-timeout: 7000
     virtual-host: /
