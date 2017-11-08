@@ -9,7 +9,10 @@ spring:
     connection-timeout: 7000
     virtual-host: /
     username: root
-    password: taxi123456
+    password: '{cipher}aaa598ab8836842c849b48b772f8fbfc48fef9c4fb9f933dbeb73b91128e1523'
+    listener:
+      simple:
+        acknowledge-mode: auto
   jackson:
     date-format: yyyy-MM-dd HH:mm:ss
     time-zone: GMT+8

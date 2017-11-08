@@ -10,6 +10,10 @@ spring:
     virtual-host: /
     username: root
     password: '{cipher}e672e2f0385f8a9261df6a803fccbabc8d6251c8ea7579eee344472456777967'
+    template:
+      retry:
+        enabled: true
+        max-attempts: 2
     listener:
       simple:
         acknowledge-mode: auto
@@ -20,12 +24,12 @@ spring:
       timeout: 1800000
   data:
     mongodb:
-      host: 192.168.0.222
+      host: 120.55.42.113
       port: 27334
       database: notification
       authenticationDatabase: notification
       username: notification
-      password: '(Notification0)'
+      password: '{cipher}c9712f9e3620901030e4c5d353211085d501f6a6c6a8f6ca9b49ca91346bdcbe'
   jackson:
     date-format: yyyy-MM-dd HH:mm:ss
     time-zone: GMT+8
