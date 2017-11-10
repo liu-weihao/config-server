@@ -37,13 +37,13 @@ eureka:
   client:
     service-url:
       defaultZone: http://peer1:10000/eureka
-#feign:
-#  compression:
-#    request:
-#      mime-types: text/xml,application/xml,application/json
-#      min-request-size: 2048
-#  hystrix:
-#    enabled: false
+feign:
+  compression:
+    request:
+      mime-types: text/xml,application/xml,application/json
+      min-request-size: 2048
+  hystrix:
+    enabled: false
 zuul:
   max:
     host:
@@ -79,6 +79,8 @@ taxi-user:
     OkToRetryOnAllOperations: true
     eureka:
       enabled: true
+  hystrix:
+      enabled: false
 taxi-account:
   ribbon:
     ReadTimeout: 20000
@@ -88,6 +90,8 @@ taxi-account:
     OkToRetryOnAllOperations: true
     eureka:
       enabled: true
+  hystrix:
+      enabled: false
 taxi-order:
   ribbon:
     ReadTimeout: 20000
@@ -97,6 +101,8 @@ taxi-order:
     OkToRetryOnAllOperations: true
     eureka:
       enabled: true
+  hystrix:
+      enabled: false
 taxi-system:
   ribbon:
     ReadTimeout: 20000
@@ -106,6 +112,8 @@ taxi-system:
     OkToRetryOnAllOperations: true
     eureka:
       enabled: true
+  hystrix:
+      enabled: false
 taxi-finance:
   ribbon:
     ReadTimeout: 20000
@@ -115,6 +123,8 @@ taxi-finance:
     OkToRetryOnAllOperations: true
     eureka:
       enabled: true
+  hystrix:
+      enabled: false
 taxi-notification:
   ribbon:
     ReadTimeout: 20000
@@ -124,3 +134,5 @@ taxi-notification:
     OkToRetryOnAllOperations: true
     eureka:
       enabled: true
+  hystrix:
+    enabled: false
