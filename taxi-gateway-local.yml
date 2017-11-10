@@ -97,15 +97,6 @@ taxi-account:
     OkToRetryOnAllOperations: true
     eureka:
       enabled: true
-  hystrix:
-    command:
-      default:
-        execution:
-          timeout:
-            enabled: true
-          isolation:
-            thread:
-              timeoutInMilliseconds: 60000
 taxi-order:
   ribbon:
     ReadTimeout: 20000
@@ -115,15 +106,6 @@ taxi-order:
     OkToRetryOnAllOperations: true
     eureka:
       enabled: true
-  hystrix:
-    command:
-      default:
-        execution:
-          timeout:
-            enabled: true
-          isolation:
-            thread:
-              timeoutInMilliseconds: 60000
 taxi-system:
   ribbon:
     ReadTimeout: 20000
@@ -133,15 +115,6 @@ taxi-system:
     OkToRetryOnAllOperations: true
     eureka:
       enabled: true
-  hystrix:
-    command:
-      default:
-        execution:
-          timeout:
-            enabled: true
-          isolation:
-            thread:
-              timeoutInMilliseconds: 60000
 taxi-finance:
   ribbon:
     ReadTimeout: 20000
@@ -151,15 +124,6 @@ taxi-finance:
     OkToRetryOnAllOperations: true
     eureka:
       enabled: true
-  hystrix:
-    command:
-      default:
-        execution:
-          timeout:
-            enabled: true
-          isolation:
-            thread:
-              timeoutInMilliseconds: 60000
 taxi-notification:
   ribbon:
     ReadTimeout: 20000
@@ -169,12 +133,3 @@ taxi-notification:
     OkToRetryOnAllOperations: true
     eureka:
       enabled: true
-  hystrix:
-    command:
-      default:
-        execution:
-          timeout:
-            enabled: true
-          isolation:
-            thread:
-              timeoutInMilliseconds: 60000
