@@ -3,6 +3,10 @@ server:
 spring:
   application:
     name: taxi-gateway
+  cloud:
+    loadbalancer:
+      retry:
+        enabled: true
   redis:
       host: 120.55.42.113
       port: 6370
@@ -37,18 +41,24 @@ eureka:
   client:
     service-url:
       defaultZone: http://peer1:10000/eureka
+  instance:
+    prefer-ip-address: true
+    instance-id: ${spring.application.name}:${spring.application.instance_id:${server.port}}
 feign:
   compression:
     request:
       mime-types: text/xml,application/xml,application/json
       min-request-size: 2048
+  hystrix:
+    enabled: true
 zuul:
+  retryable: true
   max:
     host:
       connections: 500
   host:
-    socket-timeout-millis: 60000
-    connect-timeout-millis: 60000
+    socket-timeout-millis: 30000
+    connect-timeout-millis: 30000
   routes:
     user:
       path: /*/user/**
@@ -68,105 +78,64 @@ zuul:
     system:
       path: /*/system/**
       serviceId: taxi-system
+hystrix:
+    command:
+        default:
+            execution:
+                isolation:
+                    thread:
+                        timeoutInMilliseconds: 20000
 taxi-user:
   ribbon:
-    ReadTimeout: 12000
-    ConnectTimeout: 12000
-    MaxAutoRetries: 1
-    MaxAutoRetriesNextServer: 2
+    ReadTimeout: 15000
+    ConnectTimeout: 15000
+    MaxAutoRetries: 2
+    MaxAutoRetriesNextServer: 3
+    OkToRetryOnAllOperations: true
     eureka:
       enabled: true
-  hystrix:
-    command:
-      default:
-        execution:
-          timeout:
-            enabled: true
-          isolation:
-            thread:
-              timeoutInMilliseconds: 15000
 taxi-account:
   ribbon:
-    ReadTimeout: 12000
-    ConnectTimeout: 12000
-    MaxAutoRetries: 1
-    MaxAutoRetriesNextServer: 2
+    ReadTimeout: 15000
+    ConnectTimeout: 15000
+    MaxAutoRetries: 2
+    MaxAutoRetriesNextServer: 3
+    OkToRetryOnAllOperations: true
     eureka:
       enabled: true
-  hystrix:
-    command:
-      default:
-        execution:
-          timeout:
-            enabled: true
-          isolation:
-            thread:
-              timeoutInMilliseconds: 15000
 taxi-order:
   ribbon:
-    ReadTimeout: 13000
-    ConnectTimeout: 13000
-    MaxAutoRetries: 1
-    MaxAutoRetriesNextServer: 2
+    ReadTimeout: 15000
+    ConnectTimeout: 15000
+    MaxAutoRetries: 2
+    MaxAutoRetriesNextServer: 3
+    OkToRetryOnAllOperations: true
     eureka:
       enabled: true
-  hystrix:
-    command:
-      default:
-        execution:
-          timeout:
-            enabled: true
-          isolation:
-            thread:
-              timeoutInMilliseconds: 15000
 taxi-system:
   ribbon:
-    ReadTimeout: 12000
-    ConnectTimeout: 12000
-    MaxAutoRetries: 1
-    MaxAutoRetriesNextServer: 2
+    ReadTimeout: 15000
+    ConnectTimeout: 15000
+    MaxAutoRetries: 2
+    MaxAutoRetriesNextServer: 3
+    OkToRetryOnAllOperations: true
     eureka:
       enabled: true
-  hystrix:
-    command:
-      default:
-        execution:
-          timeout:
-            enabled: true
-          isolation:
-            thread:
-              timeoutInMilliseconds: 15000
 taxi-finance:
   ribbon:
-    ReadTimeout: 10000
-    ConnectTimeout: 10000
-    MaxAutoRetries: 1
-    MaxAutoRetriesNextServer: 2
+    ReadTimeout: 15000
+    ConnectTimeout: 15000
+    MaxAutoRetries: 2
+    MaxAutoRetriesNextServer: 3
+    OkToRetryOnAllOperations: true
     eureka:
       enabled: true
-  hystrix:
-    command:
-      default:
-        execution:
-          timeout:
-            enabled: true
-          isolation:
-            thread:
-              timeoutInMilliseconds: 15000
 taxi-notification:
   ribbon:
-    ReadTimeout: 10000
-    ConnectTimeout: 10000
-    MaxAutoRetries: 1
-    MaxAutoRetriesNextServer: 2
+    ReadTimeout: 15000
+    ConnectTimeout: 15000
+    MaxAutoRetries: 2
+    MaxAutoRetriesNextServer: 3
+    OkToRetryOnAllOperations: true
     eureka:
       enabled: true
-  hystrix:
-    command:
-      default:
-        execution:
-          timeout:
-            enabled: true
-          isolation:
-            thread:
-              timeoutInMilliseconds: 15000
