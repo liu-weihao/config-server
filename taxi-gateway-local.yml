@@ -72,67 +72,97 @@ zuul:
       serviceId: taxi-system
 taxi-user:
   ribbon:
-    ReadTimeout: 20000
-    ConnectTimeout: 20000
+    ReadTimeout: 60000
+    ConnectTimeout: 60000
     MaxAutoRetries: 2
     MaxAutoRetriesNextServer: 3
     OkToRetryOnAllOperations: true
     eureka:
       enabled: true
   hystrix:
-      enabled: false
+    command:
+      default:
+        execution:
+          isolation:
+            thread:
+              timeoutInMilliseconds: 50000
 taxi-account:
   ribbon:
-    ReadTimeout: 20000
-    ConnectTimeout: 20000
+    ReadTimeout: 60000
+    ConnectTimeout: 60000
     MaxAutoRetries: 2
     MaxAutoRetriesNextServer: 3
     OkToRetryOnAllOperations: true
     eureka:
       enabled: true
   hystrix:
-      enabled: false
+      command:
+        default:
+          execution:
+            isolation:
+              thread:
+                timeoutInMilliseconds: 50000
 taxi-order:
   ribbon:
-    ReadTimeout: 20000
-    ConnectTimeout: 20000
+    ReadTimeout: 60000
+    ConnectTimeout: 60000
     MaxAutoRetries: 2
     MaxAutoRetriesNextServer: 3
     OkToRetryOnAllOperations: true
     eureka:
       enabled: true
   hystrix:
-      enabled: false
+      command:
+        default:
+          execution:
+            isolation:
+              thread:
+                timeoutInMilliseconds: 50000
 taxi-system:
   ribbon:
-    ReadTimeout: 20000
-    ConnectTimeout: 20000
+    ReadTimeout: 60000
+    ConnectTimeout: 60000
     MaxAutoRetries: 2
     MaxAutoRetriesNextServer: 3
     OkToRetryOnAllOperations: true
     eureka:
       enabled: true
   hystrix:
-      enabled: false
+      command:
+        default:
+          execution:
+            isolation:
+              thread:
+                timeoutInMilliseconds: 50000
 taxi-finance:
   ribbon:
-    ReadTimeout: 20000
-    ConnectTimeout: 20000
+    ReadTimeout: 60000
+    ConnectTimeout: 60000
     MaxAutoRetries: 2
     MaxAutoRetriesNextServer: 3
     OkToRetryOnAllOperations: true
     eureka:
       enabled: true
   hystrix:
-      enabled: false
+      command:
+        default:
+          execution:
+            isolation:
+              thread:
+                timeoutInMilliseconds: 50000
 taxi-notification:
   ribbon:
-    ReadTimeout: 20000
-    ConnectTimeout: 20000
+    ReadTimeout: 60000
+    ConnectTimeout: 60000
     MaxAutoRetries: 2
     MaxAutoRetriesNextServer: 3
     OkToRetryOnAllOperations: true
     eureka:
       enabled: true
   hystrix:
-    enabled: false
+      command:
+        default:
+          execution:
+            isolation:
+              thread:
+                timeoutInMilliseconds: 50000
