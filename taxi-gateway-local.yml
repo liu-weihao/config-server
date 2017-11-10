@@ -70,57 +70,57 @@ zuul:
     system:
       path: /*/system/**
       serviceId: taxi-system
-taxi-user:
-  ribbon:
-    ReadTimeout: 20000
-    ConnectTimeout: 20000
-    MaxAutoRetries: 2
-    MaxAutoRetriesNextServer: 3
-    OkToRetryOnAllOperations: true
-    eureka:
-      enabled: true
-taxi-account:
-  ribbon:
-    ReadTimeout: 20000
-    ConnectTimeout: 20000
-    MaxAutoRetries: 2
-    MaxAutoRetriesNextServer: 3
-    OkToRetryOnAllOperations: true
-    eureka:
-      enabled: true
-taxi-order:
-  ribbon:
-    ReadTimeout: 20000
-    ConnectTimeout: 20000
-    MaxAutoRetries: 2
-    MaxAutoRetriesNextServer: 3
-    OkToRetryOnAllOperations: true
-    eureka:
-      enabled: true
-taxi-system:
-  ribbon:
-    ReadTimeout: 20000
-    ConnectTimeout: 20000
-    MaxAutoRetries: 2
-    MaxAutoRetriesNextServer: 3
-    OkToRetryOnAllOperations: true
-    eureka:
-      enabled: true
-taxi-finance:
-  ribbon:
-    ReadTimeout: 20000
-    ConnectTimeout: 20000
-    MaxAutoRetries: 2
-    MaxAutoRetriesNextServer: 3
-    OkToRetryOnAllOperations: true
-    eureka:
-      enabled: true
-taxi-notification:
-  ribbon:
-    ReadTimeout: 20000
-    ConnectTimeout: 20000
-    MaxAutoRetries: 2
-    MaxAutoRetriesNextServer: 3
-    OkToRetryOnAllOperations: true
-    eureka:
-      enabled: true
+#taxi-user:
+#  ribbon:
+#    ReadTimeout: 20000
+#    ConnectTimeout: 20000
+#    MaxAutoRetries: 2
+#    MaxAutoRetriesNextServer: 3
+#    OkToRetryOnAllOperations: true
+#    eureka:
+#      enabled: true
+#taxi-account:
+#  ribbon:
+#    ReadTimeout: 20000
+#    ConnectTimeout: 20000
+#    MaxAutoRetries: 2
+#    MaxAutoRetriesNextServer: 3
+#    OkToRetryOnAllOperations: true
+#    eureka:
+#      enabled: true
+#taxi-order:
+#  ribbon:
+#    ReadTimeout: 20000
+#    ConnectTimeout: 20000
+#    MaxAutoRetries: 2
+#    MaxAutoRetriesNextServer: 3
+#    OkToRetryOnAllOperations: true
+#    eureka:
+#      enabled: true
+#taxi-system:
+#  ribbon:
+#    ReadTimeout: 20000
+#    ConnectTimeout: 20000
+#    MaxAutoRetries: 2
+#    MaxAutoRetriesNextServer: 3
+#    OkToRetryOnAllOperations: true
+#    eureka:
+#      enabled: true
+#taxi-finance:
+#  ribbon:
+#    ReadTimeout: 20000
+#    ConnectTimeout: 20000
+#    MaxAutoRetries: 2
+#    MaxAutoRetriesNextServer: 3
+#    OkToRetryOnAllOperations: true
+#    eureka:
+#      enabled: true
+#taxi-notification:
+#  ribbon:
+#    ReadTimeout: 20000
+#    ConnectTimeout: 20000
+#    MaxAutoRetries: 2
+#    MaxAutoRetriesNextServer: 3
+#    OkToRetryOnAllOperations: true
+#    eureka:
+#      enabled: true
