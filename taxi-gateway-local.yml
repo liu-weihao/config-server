@@ -81,7 +81,7 @@ hystrix:
             execution:
                 isolation:
                     thread:
-                        timeoutInMilliseconds: 1000
+                        timeoutInMilliseconds: 20000
 taxi-user:
   ribbon:
     ReadTimeout: 15000
