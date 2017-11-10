@@ -73,6 +73,13 @@ zuul:
     system:
       path: /*/system/**
       serviceId: taxi-system
+hystrix:
+    command:
+        default:
+            execution:
+                isolation:
+                    thread:
+                        timeoutInMilliseconds: 50000
 taxi-user:
   ribbon:
     ReadTimeout: 60000
