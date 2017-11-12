@@ -20,12 +20,12 @@ spring:
       timeout: 1800000
   data:
     mongodb:
-      host: 120.55.42.113
+      host: 192.168.0.222
       port: 27334
-      database: order
-      authenticationDatabase: order
-      username: order
-      password: '{cipher}dfc58e60fdd9692c06ec75c5114aedb96c177cd08903973ec61a88ef4e585687'
+      database: finance
+      authenticationDatabase: finance
+      username: finance
+      password: '{cipher}fac45ada0f02cca623c7624449b0f086033ba7105257ddb4cc4c2b5741b3523a'
   jackson:
     date-format: yyyy-MM-dd HH:mm
     time-zone: GMT+8
