@@ -15,7 +15,7 @@ spring:
         acknowledge-mode: auto
   data:
     mongodb:
-      host: 192.168.0.222
+      host: 120.55.42.113
       port: 27334
       database: finance
       authenticationDatabase: finance
