@@ -13,6 +13,14 @@ spring:
     listener:
       simple:
         acknowledge-mode: auto
+  data:
+    mongodb:
+      host: 192.168.0.222
+      port: 27334
+      database: finance
+      authenticationDatabase: finance
+      username: finance
+      password: '{cipher}fac45ada0f02cca623c7624449b0f086033ba7105257ddb4cc4c2b5741b3523a'
   jackson:
     date-format: yyyy-MM-dd HH:mm:ss
     time-zone: GMT+8
