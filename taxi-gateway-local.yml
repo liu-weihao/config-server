@@ -86,7 +86,7 @@ taxi-user:
   ribbon:
     ReadTimeout: 15000
     ConnectTimeout: 15000
-    MaxAutoRetries: 2
+    MaxAutoRetries: 5
     MaxAutoRetriesNextServer: 3
     OkToRetryOnAllOperations: true
     eureka:
