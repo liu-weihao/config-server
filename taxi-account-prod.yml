@@ -4,7 +4,7 @@ spring:
   application:
     name: taxi-account
   rabbitmq:
-    host: 192.168.0.222
+    host: 116.62.201.147
     port: 5672
     connection-timeout: 7000
     virtual-host: /
@@ -15,7 +15,7 @@ spring:
         acknowledge-mode: auto
   data:
     mongodb:
-      host: 192.168.0.222
+      host: 116.62.201.147
       port: 27334
       database: finance
       authenticationDatabase: finance
@@ -25,9 +25,9 @@ spring:
     date-format: yyyy-MM-dd HH:mm:ss
     time-zone: GMT+8
   datasource:
-    url: jdbc:mysql://192.168.0.222:3306/taxi-account?useUnicode=true&characterEncoding=UTF8&useSSL=false
+    url: jdbc:mysql://rm-bp1350w364k2r6sz3.mysql.rds.aliyuncs.com/taxi-account?useUnicode=true&characterEncoding=UTF8&useSSL=false
     username: root
-    password: '{cipher}aaa598ab8836842c849b48b772f8fbfc48fef9c4fb9f933dbeb73b91128e1523'
+    password: '{cipher}593904d6330413cf8698804b46d964cc44be00cf7cd5d57c63c7ca96faadcc56'
     # 使用Hikari数据源
     type: com.zaxxer.hikari.HikariDataSource
     driver-class-name: com.mysql.jdbc.Driver
