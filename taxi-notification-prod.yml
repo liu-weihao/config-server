@@ -1,31 +1,40 @@
 server:
-  port: 8102
+  port: 8105
 spring:
   application:
-    name: taxi-account
+    name: taxi-notification
   rabbitmq:
     host: 192.168.0.222
     port: 5672
     connection-timeout: 7000
     virtual-host: /
     username: root
-    password: '${rabbitmq_password}'
+    password: '{cipher}aaa598ab8836842c849b48b772f8fbfc48fef9c4fb9f933dbeb73b91128e1523'
+    template:
+      retry:
+        enabled: true
+        max-attempts: 2
     listener:
       simple:
         acknowledge-mode: auto
+  redis:
+      host: 192.168.0.222
+      port: 6370
+      password: '{cipher}24462190beaad45fc90fd249abfc16af0cc2c49530702a35036314f6d08de5ef'
+      timeout: 1800000
   data:
     mongodb:
       host: 192.168.0.222
       port: 27334
-      database: finance
-      authenticationDatabase: finance
-      username: finance
-      password: '{cipher}fac45ada0f02cca623c7624449b0f086033ba7105257ddb4cc4c2b5741b3523a'
+      database: notification
+      authenticationDatabase: notification
+      username: notification
+      password: '{cipher}c9712f9e3620901030e4c5d353211085d501f6a6c6a8f6ca9b49ca91346bdcbe'
   jackson:
     date-format: yyyy-MM-dd HH:mm:ss
     time-zone: GMT+8
   datasource:
-    url: jdbc:mysql://192.168.0.222:3306/taxi-account?useUnicode=true&characterEncoding=UTF8&useSSL=false
+    url: jdbc:mysql://192.168.0.222:3306/taxi-notification?useUnicode=true&characterEncoding=UTF8&useSSL=false
     username: root
     password: '{cipher}aaa598ab8836842c849b48b772f8fbfc48fef9c4fb9f933dbeb73b91128e1523'
     # 使用Hikari数据源
