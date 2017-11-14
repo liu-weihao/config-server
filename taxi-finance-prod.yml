@@ -31,7 +31,7 @@ spring:
     time-zone: GMT+8
   datasource:
     url: jdbc:mysql://rm-bp1350w364k2r6sz3.mysql.rds.aliyuncs.com:3306/taxi-finance?useUnicode=true&characterEncoding=UTF8&useSSL=false
-    username: root
+    username: yoogurt
     password: '{cipher}593904d6330413cf8698804b46d964cc44be00cf7cd5d57c63c7ca96faadcc56'
     # 使用Hikari数据源
     type: com.zaxxer.hikari.HikariDataSource
