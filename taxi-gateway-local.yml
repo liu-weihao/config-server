@@ -91,6 +91,9 @@ taxi-user:
     OkToRetryOnAllOperations: true
     eureka:
       enabled: true
+    feign:
+      hystrix:
+        enabled: true
 taxi-account:
   ribbon:
     ReadTimeout: 15000
@@ -100,6 +103,9 @@ taxi-account:
     OkToRetryOnAllOperations: true
     eureka:
       enabled: true
+    feign:
+      hystrix:
+        enabled: true
 taxi-order:
   ribbon:
     ReadTimeout: 15000
@@ -109,6 +115,9 @@ taxi-order:
     OkToRetryOnAllOperations: true
     eureka:
       enabled: true
+    feign:
+      hystrix:
+        enabled: true
 taxi-system:
   ribbon:
     ReadTimeout: 15000
