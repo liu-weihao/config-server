@@ -87,7 +87,7 @@ taxi-user:
     ReadTimeout: 15000
     ConnectTimeout: 15000
     MaxAutoRetries: 5
-    MaxAutoRetriesNextServer: 3
+    MaxAutoRetriesNextServer: 5
     OkToRetryOnAllOperations: true
     eureka:
       enabled: true
