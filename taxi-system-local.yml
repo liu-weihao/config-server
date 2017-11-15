@@ -31,7 +31,7 @@ feign:
         execution:
           isolation:
             thread:
-              timeoutInMilliseconds: 3000
+              timeoutInMilliseconds: 10
 eureka:
   client:
     service-url:
