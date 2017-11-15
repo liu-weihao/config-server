@@ -39,6 +39,12 @@ spring:
 feign:
   hystrix:
     enabled: true
+    command:
+      default:
+        execution:
+          isolation:
+            thread:
+              timeoutInMilliseconds: 3000
 eureka:
   client:
     service-url:
