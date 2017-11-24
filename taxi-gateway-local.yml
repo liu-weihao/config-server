@@ -50,8 +50,8 @@ feign:
     request:
       mime-types: text/xml,application/xml,application/json
       min-request-size: 2048
-  hystrix:
-    enabled: true
+#  hystrix:
+#    enabled: true
 zuul:
   retryable: true
   max:
@@ -80,12 +80,20 @@ zuul:
       path: /*/system/**
       serviceId: taxi-system
 hystrix:
+#  threadpool:
+#    default:
+#      coreSize: 200
+#      maxQueueSize: 200
+#      queueSizeRejectionThreshold: 50
   command:
     default:
       execution:
         timeout:
           enabled: true
-        isolation:
+#        isolation:
+#          strategy: THREAD
+#          semaphore:
+#            maxConcurrentRequests: 1000
           thread:
             timeoutInMilliseconds: 12000
 taxi-user:
