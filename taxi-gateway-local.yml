@@ -80,20 +80,12 @@ zuul:
       path: /*/system/**
       serviceId: taxi-system
 hystrix:
-  threadpool:
-    default:
-      coreSize: 200
-      maxQueueSize: 200
-      queueSizeRejectionThreshold: 50
   command:
     default:
       execution:
         timeout:
           enabled: true
         isolation:
-          strategy: THREAD
-          semaphore:
-            maxConcurrentRequests: 1000
           thread:
             timeoutInMilliseconds: 12000
 taxi-user:
