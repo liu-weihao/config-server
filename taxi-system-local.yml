@@ -23,9 +23,9 @@ spring:
     # 使用Hikari数据源
     type: com.zaxxer.hikari.HikariDataSource
     driver-class-name: com.mysql.jdbc.Driver
-feign:
-  hystrix:
-    enabled: true
+#feign:
+#  hystrix:
+#    enabled: true
 eureka:
   client:
     service-url:
